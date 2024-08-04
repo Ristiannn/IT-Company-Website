@@ -1,0 +1,659 @@
+/**************************************/
+/************ General CSS *************/
+/**************************************/
+body {
+  color: #757575;
+  font-family: "Raleway", sans-serif;
+  background: #ffffff;
+}
+
+a {
+  color: #4f84c4;
+  transition: 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #666666;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  color: #757575;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #888888;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+/**************************************/
+/********** Back to Top CSS ***********/
+/**************************************/
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #4f84c4;
+  color: #ffffff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 1;
+  font-size: 44px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.3s;
+  z-index: 9;
+}
+
+.back-to-top i {
+  color: #ffffff;
+}
+
+/**************************************/
+/************** Nav CSS ***************/
+/**************************************/
+.navbar-brand img {
+  width: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar .container-fluid {
+    flex-direction: column;
+  }
+}
+
+.navbar .navbar-nav .nav-link {
+  color: blue;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+}
+
+/**************************************/
+/************* Header CSS *************/
+/**************************************/
+.header {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  margin-top: 100px;
+}
+
+.header .carousel-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header .carousel-img {
+  text-align: center;
+}
+
+.header .carousel-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header .carousel-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.header .carousel-content h2 {
+  color: #4f84c4;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+.header .carousel-content p {
+  color: #353535;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.header .carousel-content .btn {
+  padding: 12px 30px;
+  color: #ffffff;
+  border-radius: 0;
+  background: #4f84c4;
+}
+
+.header .carousel-content .btn:hover {
+  background: #888888;
+}
+
+.carousel-control-next i,
+.carousel-control-prev i {
+  color: #888888;
+  font-size: 45px;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 0px;
+  background: #888888;
+}
+
+/**************************************/
+/******** Section Header CSS **********/
+/**************************************/
+.section-header {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  padding-bottom: 25px;
+}
+
+.section-header h2 {
+  color: #666666;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  background: #cccccc;
+  border-radius: 0 0 5px 5px;
+  bottom: 0;
+  left: calc(50% - 50px);
+}
+
+.section-header p {
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+/**************************************/
+/********* Call To Action CSS *********/
+/**************************************/
+.call-to-action {
+  position: relative;
+  padding: 90px 0;
+}
+
+.fullscreen-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.fullscreen-video-wrap video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.call-to-action .container {
+  max-width: 700px;
+}
+
+.call-to-action .section-header h2 {
+  color: #ffffff;
+}
+
+.call-to-action .section-header::before {
+  background: #ffffff;
+}
+
+.call-to-action .section-header p {
+  color: #ffffff;
+}
+
+.call-to-action .btn {
+  padding: 15px 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+.call-to-action .btn:hover {
+  color: #ffffff;
+  background: #353535;
+}
+
+/**************************************/
+/************* Pricing CSS ************/
+/**************************************/
+.pricing {
+  background: #f2f2f2;
+  padding: 90px 0 60px 0;
+}
+
+.pricing .price-content {
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing .price-content h3 {
+  position: relative;
+  background: #ffffff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.pricing .price-content p {
+  position: relative;
+  background: #ffffff;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.pricing .price-plan {
+  display: block;
+  background: #353535;
+  margin: 0 0 30px;
+  padding: 20px 0;
+}
+
+.pricing .price-plan i {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.pricing .price-title {
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.pricing .price-amount {
+  position: relative;
+  font-family: "Arial, Helvetica", sans-serif;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.pricing .price-amount span {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.pricing .price-amount span:first-child {
+  position: relative;
+  top: -27px;
+  left: -5px;
+}
+
+.pricing .price-date {
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.pricing .price-details {
+  font-size: 16px;
+  list-style: none;
+  text-align: left;
+}
+
+.pricing .price-details li {
+  padding: 5px 0;
+}
+
+.pricing .price-details li i.ion-md-checkmark {
+  color: #4f84c4;
+  margin-right: 8px;
+}
+
+.pricing .price-details li i.ion-md-close {
+  color: #ea4335;
+  margin-right: 10px;
+}
+
+.pricing .btn {
+  color: #ffffff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+}
+
+.pricing .price-btn {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #353535;
+  color: #ffffff;
+}
+
+.pricing .price-btn:hover {
+  background: #4f84c4;
+}
+
+.pricing .features-price-btn {
+  background: #4f84c4;
+}
+
+.pricing .features-price-btn:hover {
+  background: #353535;
+}
+
+.pricing .features-price .price-plan {
+  background: #4f84c4;
+}
+
+.pricing .features-price .price-plan p {
+  color: #ffffff;
+}
+
+.pricing .features-price .price-plan .price-amount,
+.pricing .features-price .price-plan .price-amount span {
+  color: #ffffff;
+}
+
+.pricing .features-price .price-plan .price-title {
+  color: #ffffff;
+}
+
+/**************************************/
+/*********** Testimonials CSS *********/
+/**************************************/
+.testimonials {
+  position: relative;
+  padding: 90px 0 60px 0;
+  background: #f2f2f2;
+}
+
+.testimonials .testimonial-item {
+  position: relative;
+  margin: 0 15px 30px 15px;
+  background: #ffffff;
+}
+
+.testimonials .testimonial-img {
+  position: relative;
+  background: #000000;
+  overflow: hidden;
+}
+
+.testimonials .testimonial-text {
+  position: relative;
+  width: 100%;
+  padding: 30px 15px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.testimonials .testimonial-text h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.testimonials .testimonial-text h4 {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.testimonials .testimonial-text p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.testimonials .owl-nav,
+.testimonials .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.testimonials .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #dddddd;
+}
+
+.testimonials .owl-dot.active {
+  background-color: #4f84c4;
+}
+
+@media (max-width: 575px) {
+  .testimonials .testimonial-text {
+    padding: 25px;
+  }
+}
+
+/**************************************/
+/************* Clients CSS ************/
+/**************************************/
+.clients {
+  position: relative;
+  padding: 90px 0;
+}
+
+.clients .section-header p {
+  padding-bottom: 10px;
+}
+
+.clients img {
+  max-width: 100%;
+  opacity: 1;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+.clients img:hover {
+  opacity: 0.5;
+}
+
+.clients .owl-nav,
+.clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.clients .owl-dot.active {
+  background-color: #4f84c4;
+}
+
+/**************************************/
+/************* Footer CSS *************/
+/**************************************/
+.footer {
+  position: relative;
+  padding: 0 0 30px 0;
+  background: #000000;
+}
+
+.footer .footer-top {
+  background: #222222;
+  padding: 60px 0 30px 0;
+}
+
+.footer .footer-top .footer-info,
+.footer .footer-top .footer-links,
+.footer .footer-top .footer-contact,
+.footer .footer-top .footer-newsletter {
+  margin-bottom: 30px;
+}
+
+.footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #ffffff;
+  color: #4f84c4;
+  line-height: 1;
+  padding: 9px 0;
+  margin-right: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .footer-top .social-links a:hover {
+  background: #4f84c4;
+  color: #ffffff;
+}
+
+.footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.footer .footer-top h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 50px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-top .footer-links ul i {
+  padding-right: 8px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer .footer-top .footer-links ul li {
+  padding: 7px 0;
+}
+
+.footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+.footer .footer-top .footer-links ul a {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer .footer-top .footer-links ul a:hover {
+  color: #4f84c4;
+}
+
+.footer .footer-top .footer-contact p {
+  color: #ffffff;
+  line-height: 26px;
+}
+
+.footer .footer-top .footer-contact img {
+  width: 100px;
+}
+
+.footer .footer-top .footer-newsletter input[type="email"] {
+  padding: 6px 8px;
+  width: 60%;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+
+.footer .footer-top .footer-newsletter input[type="submit"] {
+  border: 0;
+  width: 40%;
+  padding: 6px 0;
+  text-align: center;
+  color: #4f84c4;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer .footer-top .footer-newsletter input[type="submit"]:hover {
+  color: #ffffff;
+  background: #4f84c4;
+  border: 1px solid #4f84c4;
+}
+
+.footer .footer-top .footer-newsletter p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer .credit,
+.footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .footer .credit {
+    text-align: right;
+  }
+
+  .footer .copyright {
+    text-align: left;
+  }
+}
